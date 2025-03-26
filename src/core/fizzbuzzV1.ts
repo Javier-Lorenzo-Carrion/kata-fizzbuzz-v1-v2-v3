@@ -1,4 +1,4 @@
-export function fizzbuzz(number:number):string{
+export function fizzbuzzV1(number:number):string{
     function isDivisibleBy(divisor: number) {
         return number % divisor === 0;
     }
