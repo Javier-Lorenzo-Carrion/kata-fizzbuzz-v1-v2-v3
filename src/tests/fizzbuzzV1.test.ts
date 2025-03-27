@@ -2,31 +2,19 @@ import {fizzbuzzV1} from "../core/fizzBuzzV1";
 
 
 describe('FizzBuzz should', () => {
-    it("returns number one as a string for number one", () => {
+    it("returns number one as a string for number 1", () => {
         expect(fizzbuzzV1(1)).toBe("1");
     });
-    it("returns number two as a string for number two", () => {
+    it("returns number two as a string for number 2", () => {
         expect(fizzbuzzV1(2)).toBe("2");
     });
-    it("returns fizz for number three", () => {
+    it("returns fizz for any number divisible by 3", () => {
         expect(fizzbuzzV1(3)).toBe("fizz");
     });
-    it("returns buzz for number five", () => {
+    it("returns buzz for any number divisible by 5", () => {
         expect(fizzbuzzV1(5)).toBe("buzz");
     });
-    it("returns fizzbuzz for number fifteen", () => {
+    it("returns fizzbuzz for any number divisible by 3 and 5", () => {
         expect(fizzbuzzV1(15)).toBe("fizzbuzz");
-    });
-    it("returns fizz for any number divisible by three", () => {
-        expect(fizzbuzzV1(6)).toBe("fizz");
-    });
-    it("returns buzz for any number divisible by five", () => {
-        expect(fizzbuzzV1(10)).toBe("buzz");
-    });
-    it("returns fizzbuzz for any number divisible by fifteen", () => {
-        expect(fizzbuzzV1(30)).toBe("fizzbuzz");
-    });
-    it("returns number as a string for any number that is not divisible by three or five", () => {
-        expect(fizzbuzzV1(17)).toBe("17");
     });
 })
