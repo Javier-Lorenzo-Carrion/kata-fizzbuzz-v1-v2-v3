@@ -1,3 +1,6 @@
 export function fizzbuzzV3(number: number): string {
-    return number.toString();
+    switch (true) {
+        case number % 3 === 0: return "fizz";
+        default: return number.toString();
+    }
 }
