@@ -10,4 +10,7 @@ describe("FizzBuzzV3 should", ()=>{
     it("returns fizz for number three", ()=>{
         expect(fizzbuzzV3(3)).toBe("fizz");
     })
+    it("returns buzz for number five", ()=>{
+        expect(fizzbuzzV3(5)).toBe("buzz");
+    })
 })
